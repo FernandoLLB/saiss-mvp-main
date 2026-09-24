@@ -1,0 +1,23 @@
+{
+  "convocatoria": "creacion-empresas-2026",
+  "datos_solicitud": {
+    "solicitante": "Muestra Ejemplo Cocina S.L.",
+    "forma_juridica": "sociedad_mercantil",
+    "fecha_alta_iae": "2026-03-01",
+    "via_empleo": "alta_reta",
+    "incrementos": ["colectivo", "alquiler_hipoteca", "distrito_este"]
+  },
+  "nota": "Documentos ficticios generados por scripts/demo_documentos.py con incidencias conocidas.",
+  "casos": [
+    { "id": "D01", "fichero": "factura_diseno_web_bizum.pdf", "tipo": "factura o justificante de gasto", "incidencias": ["Pago por Bizum, medio no admitido"], "gasto_subvencionable": "no" },
+    { "id": "D02", "fichero": "factura_sillas_85.pdf", "tipo": "factura o justificante de gasto", "incidencias": ["Base imponible inferior a 100 €"], "gasto_subvencionable": "no" },
+    { "id": "D03", "fichero": "factura_horno_octubre2025.pdf", "tipo": "factura o justificante de gasto", "incidencias": ["Fecha fuera del periodo subvencionable (más de 2 meses antes del alta en el IAE)"], "gasto_subvencionable": "no" },
+    { "id": "D04", "fichero": "factura_licencia_apertura.pdf", "tipo": "factura o justificante de gasto", "incidencias": [], "gasto_subvencionable": "si" },
+    { "id": "D05", "fichero": "justificante_transferencia.pdf", "tipo": "justificante de pago", "incidencias": [], "gasto_subvencionable": null },
+    { "id": "D06", "fichero": "contrato_alquiler_local.pdf", "tipo": "contrato de arrendamiento del local", "incidencias": ["Falta la firma de la parte arrendataria"], "gasto_subvencionable": null },
+    { "id": "D07", "fichero": "contrato_indefinido_parcial.pdf", "tipo": "contrato de trabajo indefinido", "incidencias": ["Jornada del 40 %, inferior al mínimo del 50 %"], "gasto_subvencionable": null },
+    { "id": "D08", "fichero": "certificado_titularidad.pdf", "tipo": "certificado bancario / datos bancarios", "incidencias": [], "gasto_subvencionable": null },
+    { "id": "D09", "fichero": "vida_laboral.pdf", "tipo": "vida laboral", "incidencias": [], "gasto_subvencionable": null },
+    { "id": "D10", "fichero": "carta_menu.pdf", "tipo": "otro (no es un documento exigido)", "incidencias": [], "gasto_subvencionable": null }
+  ]
+}

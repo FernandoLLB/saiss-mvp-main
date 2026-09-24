@@ -1,0 +1,44 @@
+{
+  "name": "saiss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3095",
+    "build": "next build",
+    "start": "next start -p 3095",
+    "db": "psql -h localhost -d saiss -f db/schema.sql",
+    "ingestar": "tsx --env-file=.env.local scripts/ingestar.mts",
+    "ficha": "tsx --env-file=.env.local scripts/ficha.mts",
+    "evaluar": "tsx --env-file=.env.local scripts/evaluar.mts",
+    "demo": "tsx --env-file=.env.local scripts/demo.mts",
+    "capturas": "tsx --env-file=.env.local scripts/capturas.mts",
+    "accesibilidad": "tsx --env-file=.env.local scripts/accesibilidad.mts",
+    "memoria": "tsx scripts/memoria.mts",
+    "test": "tsx --test tests/*.test.mts",
+    "reglas": "tsx --env-file=.env.local scripts/reglas-ficha.mts",
+    "demo2025": "tsx --env-file=.env.local scripts/demo2025.mts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.125.0",
+    "next": "16.3.5",
+    "pg": "^8.23.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "unpdf": "^1.8.1",
+    "zod": "^4.6.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "axe-core": "^4.13.0",
+    "marked": "^18.0.13",
+    "puppeteer-core": "^25.10.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.13",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@11.3.0"
+}

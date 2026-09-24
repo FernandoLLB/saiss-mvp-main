@@ -1,0 +1,190 @@
+        ¿Cómo solicitar una Ayuda ONLINE?
+
+En la web www.fomentosansebastian.eus tras acceder con su usuario y contraseña, localice el
+Programa de Ayudas que le interese en el buscador de Ayudas del menú Ayudas / Solicitar nueva
+ayuda:
+
+
+
+
+El buscador le permitirá localizar la ayuda que necesita utilizando los filtros que considere necesarios
+para limitar el resultado tras pulsar el botón Consulta.
+Si no utiliza filtros, se mostrarán en la lista inferior todas las ayudas en vigor en ese momento.
+Se mostrará la información básica de cada ayuda.
+
+
+
+
+A través del botón VER DETALLE podrá ver la información completa de la convocatoria de ayudas que
+le interese, y qué documentación es preciso presentar para optar al programa.
+
+
+       Objetivo
+       Fecha Inicio de Solicitudes
+       Fecha Fin de Solicitudes
+       ¿Vigente?
+       Bloque Información. Documentación descargable con información sobre las ayudas en
+        general y esa convocatoria en particular.
+       Bloque Documentación a entregar. Listado de documentos a entregar en el proceso y
+        características principales de los mismos.
+       Bloque Descargables. Listado de documentación descargable para cumplimentar y entregar
+        en el proceso de solicitud.
+
+
+
+
+Si decide solicitar la ayuda, mediante el botón Solicitar situado en la parte inferior de la pantalla,
+accederá al proceso de solicitud del mismo…
+Una vez completada la información mínima requerida en este primer paso…
+
+       Representante Legal. El buscador muestra los trabajadores de su Empresa para que seleccione el
+        representante legal de la misma.
+
+, podrá iniciar la solicitud haciendo clic en Iniciar Solicitud:
+
+
+
+
+También se muestra la información principal de su empresa en esta primera pantalla...
+
+       Razón social de la empresa
+       Nombre Comercial
+       NIF-CIF
+       I.A.E.
+       Calle y nº
+       Municipio
+       C.P.
+       Teléfono
+       Fax
+       E-mail
+       Web
+ Si quiere actualizar alguna información, puede hacer clic en el botón inferior Quiero revisar mis datos de
+ empresa.
+ Si hace clic en Iniciar Solicitud, se mostrará un AVISO IMPORTANTE, que le hará las siguientes
+ recomendaciones e indicaciones:
+
+        Va a iniciar una nueva solicitud de ayuda, sería conveniente que tuviera en
+        cuenta las siguientes recomendaciones:
+
+
+
+        1 - A la hora de iniciar la solicitud tenga a mano la documentación que
+        deberá anexar a la solicitud.
+
+
+
+        2 - Su solicitud será registrada y aceptada tras adjuntar la documentación al
+        hacer click en el botón Finalizar Solicitud.
+
+
+
+
+Tras hacer clic en Siguiente, si quiere seguir adelante con la solicitud de la ayuda, se le mostrará el siguiente
+mensaje informativo importante:
+      Se han creado de forma satisfactoria las siguientes solicitudes:
+      * Nombre de la convocatoria que ha solicitado.
+
+
+      ATENCIÓN: Dispone de XXX días a partir de este momento para cumplimentar de forma completa la
+      solicitud.
+      Recuerde que su solicitud seguirá en estado de BORRADOR hasta que no la formalice desde la pestaña
+      de "solicitud".
+
+
+      Acceda al menú: Ayudas / Búsqueda de mis solicitudes para continuar con el proceso y gestionar sus
+      solicitudes en curso.
+
+
+, y accederá a la pantalla siguiente, en la cual podrá gestionar tanto la propia solicitud ya registrada,
+pero pendiente de completar…, como adjuntar la documentación necesaria reflejada en el cuadro
+Anexar Documentación – Solicitud.
+Siempre podrá volver a la gestión de su solicitud accediendo a través del menú Ayudas / Búsqueda de
+mis solicitudes.
+
+
+
+
+En esta pantalla se muestra un listado de todos los documentos que debe entregar para completar la
+solicitud de ayuda. Y en ella usted podrá:
+
+1.- Consultar el estado de cada uno de los documentos. (Validado, rechazado, obsoleto, recibido,…)
+2.- Identificar el documento. (Anexo solicitud, DNI del solicitante, escrituras de constitución, …)
+3.- ¿De Empresa?
+          Hay dos categorías de documentos: Documentos de Empresa y Documentos de
+          Subvención.
+          Documentos de empresa: estos documentos deberemos subirlos una sola vez y estarán
+          disponibles en todas las subvenciones que solicite la empresa. Para subir esta tipología de
+          documentos, deberemos hacerlo en el módulo “Empresa/Datos de mi
+          empresa/Documentación”, o a través del botón en la parte baja de la página Quiero acceder
+          a mi Empresa . Para ello, saldrá de la gestión de la ayuda.
+
+
+
+
+          Documentos de Subvención: están asociados a la subvención concreta que estamos
+          solicitando y se pueden subir desde esta misma pantalla. Estos documentos no estarán
+          disponibles en otras solicitudes de ayuda.
+4.- ¿Obligatorio? Algunos documentos son obligatorios en la convocatoria y no podrá concederse la ayuda sin
+ellos. Otros documentos son sólo obligatorios en algunos casos.
+5.- ¿Precisa firma electrónica? Algunos documentos requieren firma electrónica.
+
+6.- Observaciones. Estas observaciones pretenden aclarar dudas sobre ese documento.
+7.- Operaciones. Desde los tres iconos disponibles en esta columna, podrá:
+             1            “Descargar” el documento subido por usted
+
+             2            “Anexar el documento”
+
+
+             3            “Borrar” el documento subido anteriormente.
+
+Para anexar los documentos a la solicitud de ayuda, deberá hacer clic en la fila del documento a anexar
+
+pulsando en Anexar el documento                dentro de la columna de la derecha denominada
+“Operaciones”.
+
+A través de ese botón accederá a la ventana donde podrá examinar y elegir cada uno de los
+documentos necesarios en su ordenador.
+También puede añadir las observaciones que considere necesarias. Una vez elegido el documento, y al
+dar al botón de Guardar, la web confirmará que se ha guardado el documento.
+Tras completar la documentación necesaria, añadiendo los documentos de uno en uno, y para que la
+ayuda se formalice, deberá clickar el botón Finalizar la Solicitud para que Fomento de San Sebastián
+reciba su solicitud y proceda a la revisión de la ayuda solicitada.
+
+
+
+
+Se le muestra un AVISO IMPORTANTE:
+
+                                    ¿Está seguro de finalizar la solicitud?.
+
+                          Al finalizar la solicitud, el expediente quedará a disposición de
+                            Fomento de San Sebastián, quien procederá a su revisión.
+                                    YA NO PODRÁ ANEXAR MÁS DOCUMENTOS.
+
+            Fomento de San Sebastián revisará su solicitud y podrá solicitar que subsane o complete la
+                la documentación no entregada para lo cual usted dispondrá de 10 días hábiles
+                             desde que se le requiera subsanar la documentación.
+
+Deberá clickar en Aceptar si quiere finalizar, formalizar y entregar la solicitud de la ayuda a Fomento
+de San Sebastián teniendo en cuenta las indicaciones del mensaje anterior.
+
+
+
+
+En este momento el expediente se entrega a Fomento de San Sebastián y se le asignará un código de
+expediente con un formato similar a este: XXXX/2018/XXXX que servirá para identificar el expediente
+de ayuda.
+El expediente y estará visible en “Ayudas / Búsqueda de mis solicitudes”, donde podrá consultar el
+estado de la ayuda (concedida, denegada, en revisión,….), descargar las notificaciones emitidas por
+Fomento de San Sebastián y presentar justificaciones, alegaciones, etc.
+
+Descargo de responsabilidades:
+1. Esta guía no tiene carácter legal ni normativa.
+2. El objetivo de esta guía es ayudar al usuario, en relación a la pregunta realizada. Es una ayuda
+personalizada, y, por lo tanto, no tiene validez en manos de terceros.
+3. Esta guía no tiene en cuenta las particularidades del sistema informático del usuario, y, por lo
+tanto, no se podrá utilizar para reclamar judicial o administrativamente las consecuencias derivadas
+de estas particularidades.
+4. No se podrá reclamar al proveedor de esta guía ninguna reclamación por daños o legal debido a
+uso incorrecto de esta guía o acciones realizadas fuera de esta guía
+

@@ -1,0 +1,1268 @@
+{
+  "fecha": "2026-09-14T14:44:16.103Z",
+  "modelo": "claude-opus-5",
+  "documentos": {
+    "casos": [
+      {
+        "id": "D01",
+        "fichero": "factura_diseno_web_bizum.pdf",
+        "tipo": "factura o justificante de gasto",
+        "incidencias": [
+          "Pago por Bizum, medio no admitido"
+        ],
+        "gasto_subvencionable": "no",
+        "analisis": {
+          "tipo_documento_id": "DOC-08",
+          "tipo_documento_nombre": "Copia de las facturas y justificantes de pago",
+          "confianza": 0.93,
+          "legible": true,
+          "resumen": "Factura de un estudio de diseño por el logotipo y la web del negocio, emitida a nombre de la empresa solicitante, con pago indicado mediante Bizum.",
+          "datos": [
+            {
+              "campo": "Emisor",
+              "valor": "Estudio Creativo Ficticio (CIF 00000000T)"
+            },
+            {
+              "campo": "Número de factura",
+              "valor": "W-0088"
+            },
+            {
+              "campo": "Fecha de emisión",
+              "valor": "20/04/2026"
+            },
+            {
+              "campo": "Cliente",
+              "valor": "Muestra Ejemplo Cocina S.L. (CIF B00000000)"
+            },
+            {
+              "campo": "Concepto",
+              "valor": "Diseño de logotipo y página web del negocio"
+            },
+            {
+              "campo": "Base imponible",
+              "valor": "450,00 €"
+            },
+            {
+              "campo": "IVA 21%",
+              "valor": "94,50 €"
+            },
+            {
+              "campo": "Total",
+              "valor": "544,50 €"
+            },
+            {
+              "campo": "Forma de pago",
+              "valor": "Bizum"
+            },
+            {
+              "campo": "Fecha de pago indicada",
+              "valor": "20/04/2026"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Factura a nombre de la empresa beneficiaria con su NIF/CIF",
+              "resultado": "correcto",
+              "detalle": "Figura como cliente Muestra Ejemplo Cocina S.L. con CIF B00000000, coincidente con la solicitante.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Medio de pago admitido (tarjeta, transferencia o recibo domiciliado)",
+              "resultado": "incidencia",
+              "detalle": "La factura indica como forma de pago Bizum, medio expresamente no admitido en las bases. El gasto no sería subvencionable salvo que se acredite un pago realizado por tarjeta, transferencia o domiciliación.",
+              "referencia": "ARTÍCULO 6 (REQ-23) / DOC-08"
+            },
+            {
+              "comprobacion": "Justificante de pago con detalle de la operación (beneficiario, concepto, importe y fecha)",
+              "resultado": "incidencia",
+              "detalle": "Solo consta la mención 'PAGADA el 20/04/2026' en la propia factura; no se aporta justificante bancario independiente que detalle la operación.",
+              "referencia": "ARTÍCULO 6 (REQ-23) / DOC-08"
+            },
+            {
+              "comprobacion": "Factura pagada en su totalidad",
+              "resultado": "no_verificable",
+              "detalle": "La factura se declara pagada, pero sin justificante bancario válido no puede verificarse.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Fecha dentro del periodo subvencionable (desde 2 meses antes del alta en IAE de 01/03/2026 hasta 12 meses después)",
+              "resultado": "correcto",
+              "detalle": "Fecha de factura 20/04/2026, dentro del periodo 01/01/2026 – 01/03/2027.",
+              "referencia": "ARTÍCULO 6 (REQ-24)"
+            },
+            {
+              "comprobacion": "Importe igual o superior a 100 € sin impuestos",
+              "resultado": "correcto",
+              "detalle": "Base imponible de 450,00 €, superior al mínimo de 100 € sin impuestos.",
+              "referencia": "ARTÍCULO 6"
+            },
+            {
+              "comprobacion": "Concepto subvencionable",
+              "resultado": "correcto",
+              "detalle": "Diseño de logotipo y web encaja en gastos de comunicación del proyecto (diseño de web, campañas, etc.).",
+              "referencia": "ARTÍCULO 6 – conceptos subvencionables"
+            },
+            {
+              "comprobacion": "Importe computado por base imponible, sin IVA",
+              "resultado": "correcto",
+              "detalle": "La factura desglosa base imponible (450,00 €) e IVA (94,50 €); solo sería computable la base imponible.",
+              "referencia": "ARTÍCULO 6"
+            },
+            {
+              "comprobacion": "Coincidencia del concepto con el declarado en el Anexo 3 de memoria financiera",
+              "resultado": "no_verificable",
+              "detalle": "No se dispone del Anexo 3 en este análisis para contrastar concepto e importe.",
+              "referencia": "DOC-03 / DOC-08"
+            },
+            {
+              "comprobacion": "Coste no superior al valor de mercado",
+              "resultado": "no_verificable",
+              "detalle": "No hay elementos de contraste; el importe no resulta a priori desproporcionado.",
+              "referencia": "DOC-08"
+            }
+          ],
+          "gastos": [
+            {
+              "concepto": "Diseño de logotipo y página web del negocio",
+              "fecha": "2026-04-20",
+              "base_imponible": 450,
+              "forma_pago": "Bizum",
+              "subvencionable": "no",
+              "motivo": "El concepto y la fecha son admisibles, pero el pago se ha realizado por Bizum, medio no admitido por las bases; además no se aporta justificante bancario que detalle la operación."
+            }
+          ],
+          "mensaje_solicitante_es": "Hemos revisado la factura W-0088 (diseño de logotipo y web, 450 € sin IVA). El concepto y la fecha son correctos, pero indica como forma de pago Bizum, que las bases no admiten: solo se aceptan pagos con tarjeta, transferencia bancaria o recibo domiciliado. Además, no se ha aportado un justificante de pago que detalle beneficiario, concepto, importe y fecha (no sirve un listado de movimientos). Si el pago se realizó realmente por un medio admitido, aporte el justificante correspondiente; en caso contrario, este gasto no podrá subvencionarse. Dispone de 10 días hábiles desde la notificación para subsanar, por el mismo canal telemático de la solicitud.",
+          "mensaje_solicitante_eu": "W-0088 faktura berrikusi dugu (logotipoaren eta webgunearen diseinua, 450 € BEZik gabe). Kontzeptua eta data egokiak dira, baina ordainketa modua Bizum dela adierazten du, eta oinarriek ez dute hori onartzen: txartelez, banku-transferentziaz edo helbideratutako ordainagiriz egindako ordainketak soilik onartzen dira. Gainera, ez da aurkeztu ordainketa-egiaztagiririk, onuraduna, kontzeptua, zenbatekoa eta data zehazten dituenik (banku-mugimenduen zerrendak ez dira onartzen). Ordainketa benetan onartutako bide batetik egin bazen, ekarri dagokion egiaztagiria; bestela, gastu hori ezin izango da diruz lagundu. Jakinarazpenetik 10 egun baliodun dituzu zuzentzeko, eskaera egiteko erabili zenuen bide telematiko beretik."
+        },
+        "latencia_ms": 37128,
+        "coste_usd": 0.07701,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [
+            {
+              "incidencia": "Pago por Bizum, medio no admitido",
+              "detectada": true
+            }
+          ],
+          "avisos_adicionales": [
+            {
+              "aviso": "Falta justificante bancario independiente del pago",
+              "valoracion": "razonable"
+            }
+          ],
+          "gasto_correcto": true,
+          "comentario": "El análisis identifica correctamente el tipo documental y la incidencia de referencia (pago por Bizum), declarando el gasto no subvencionable. El aviso adicional sobre la ausencia de justificante de pago separado es prudente y pertinente."
+        }
+      },
+      {
+        "id": "D02",
+        "fichero": "factura_sillas_85.pdf",
+        "tipo": "factura o justificante de gasto",
+        "incidencias": [
+          "Base imponible inferior a 100 €"
+        ],
+        "gasto_subvencionable": "no",
+        "analisis": {
+          "tipo_documento_id": "DOC-08",
+          "tipo_documento_nombre": "Copia de las facturas y justificantes de pago",
+          "confianza": 0.92,
+          "legible": true,
+          "resumen": "Factura de mobiliario (dos sillas) emitida a nombre de la empresa solicitante por 85,00 € de base imponible, pagada con tarjeta de débito.",
+          "datos": [
+            {
+              "campo": "Emisor",
+              "valor": "Muebles Inventados S.A. (CIF A00000002)"
+            },
+            {
+              "campo": "Número de factura",
+              "valor": "M-311"
+            },
+            {
+              "campo": "Fecha de emisión",
+              "valor": "02/05/2026"
+            },
+            {
+              "campo": "Cliente",
+              "valor": "Muestra Ejemplo Cocina S.L. (CIF B00000000)"
+            },
+            {
+              "campo": "Concepto",
+              "valor": "Dos sillas para zona de clientes"
+            },
+            {
+              "campo": "Base imponible",
+              "valor": "85,00 €"
+            },
+            {
+              "campo": "IVA",
+              "valor": "17,85 €"
+            },
+            {
+              "campo": "Total",
+              "valor": "102,85 €"
+            },
+            {
+              "campo": "Forma de pago",
+              "valor": "Tarjeta de débito"
+            },
+            {
+              "campo": "Estado",
+              "valor": "Pagada el 02/05/2026"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Factura a nombre de la empresa beneficiaria con su NIF/CIF",
+              "resultado": "correcto",
+              "detalle": "Figura como cliente Muestra Ejemplo Cocina S.L. con CIF B00000000, coincidente con la solicitante.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Factura abonada en su totalidad",
+              "resultado": "correcto",
+              "detalle": "La factura indica estado PAGADA el 02/05/2026 por el total.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Medio de pago admitido (tarjeta, transferencia o domiciliación)",
+              "resultado": "correcto",
+              "detalle": "Consta pago con tarjeta de débito, medio admitido.",
+              "referencia": "REQ-23 / ARTÍCULO 6"
+            },
+            {
+              "comprobacion": "Justificante de pago con detalle de la operación",
+              "resultado": "incidencia",
+              "detalle": "No se aporta justificante de pago independiente (cargo de tarjeta o extracto con detalle de beneficiario, concepto, importe y fecha). La mención 'PAGADA' en la propia factura no sustituye al justificante bancario.",
+              "referencia": "REQ-23 / DOC-08"
+            },
+            {
+              "comprobacion": "Importe mínimo de 100 € sin impuestos",
+              "resultado": "incidencia",
+              "detalle": "La base imponible es de 85,00 €, inferior al mínimo de 100 € sin impuestos; no es subvencionable (no se trata de cuota de autónomo).",
+              "referencia": "ARTÍCULO 6 - gastos excluidos"
+            },
+            {
+              "comprobacion": "Concepto subvencionable",
+              "resultado": "incidencia",
+              "detalle": "Se trata de mobiliario (sillas). Si se imputa al incremento por obras, el mobiliario está expresamente excluido. Además, la solicitud pide incremento por alquiler/hipoteca, incompatible con obras.",
+              "referencia": "ARTÍCULO 6 - excluidos / REQ-20"
+            },
+            {
+              "comprobacion": "Fecha dentro del periodo subvencionable",
+              "resultado": "correcto",
+              "detalle": "Alta en IAE el 01/03/2026; la factura de 02/05/2026 está dentro del periodo (2 meses antes a 12 meses después).",
+              "referencia": "REQ-24"
+            },
+            {
+              "comprobacion": "Coste no superior al valor de mercado",
+              "resultado": "no_verificable",
+              "detalle": "No se dispone de elementos de comparación, aunque el importe resulta razonable.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Coincidencia con los conceptos del Anexo 3 (memoria financiera)",
+              "resultado": "no_verificable",
+              "detalle": "No se aporta en este documento el Anexo 3 para contrastar el concepto y el importe.",
+              "referencia": "DOC-03"
+            }
+          ],
+          "gastos": [
+            {
+              "concepto": "Dos sillas para zona de clientes (mobiliario)",
+              "fecha": "2026-05-02",
+              "base_imponible": 85,
+              "forma_pago": "Tarjeta de débito",
+              "subvencionable": "no",
+              "motivo": "Base imponible inferior a 100 € sin impuestos y, como mobiliario, excluido en el incremento por obras; además el IVA no es subvencionable."
+            }
+          ],
+          "mensaje_solicitante_es": "Hemos revisado la factura M-311 (dos sillas, 85,00 € sin IVA). No puede admitirse como gasto subvencionable porque su importe sin impuestos es inferior a 100 € y, al tratarse de mobiliario, está expresamente excluido. Además, no se ha aportado el justificante bancario del pago (el cargo de la tarjeta con beneficiario, concepto, importe y fecha); la indicación 'PAGADA' en la factura no es suficiente. Si desea mantener este gasto o sustituirlo por otro, revise el Anexo 3 y aporte la documentación correspondiente en el plazo de subsanación de 10 días hábiles, por el mismo canal telemático de la solicitud.",
+          "mensaje_solicitante_eu": "M-311 faktura (bi aulki, 85,00 € BEZik gabe) berrikusi dugu. Ezin da gastu diruz lagungarritzat onartu, zergarik gabeko zenbatekoa 100 € baino txikiagoa delako eta, altzaria izanik, berariaz kanpo geratzen delako. Gainera, ez da ordainketaren banku-frogagiria aurkeztu (txartelaren kargua, onuraduna, kontzeptua, zenbatekoa eta data zehaztuta); fakturan agertzen den 'ORDAINDUTA' oharra ez da nahikoa. Gastu hau mantendu edo beste batengatik ordezkatu nahi baduzu, berrikusi 3. Eranskina eta aurkeztu dagokion dokumentazioa 10 egun baliodunetako zuzenketa-epean, eskaeraren kanal telematiko beretik."
+        },
+        "latencia_ms": 32798,
+        "coste_usd": 0.07191,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [
+            {
+              "incidencia": "Base imponible inferior a 100 €",
+              "detectada": true
+            }
+          ],
+          "avisos_adicionales": [
+            {
+              "aviso": "Falta justificante de pago independiente",
+              "valoracion": "razonable"
+            },
+            {
+              "aviso": "Mobiliario excluido si se imputa al incremento por obras",
+              "valoracion": "razonable"
+            }
+          ],
+          "gasto_correcto": true,
+          "comentario": "Tipo correcto, incidencia principal detectada y gasto calificado como no subvencionable. Los avisos adicionales son prudentes y están bien matizados."
+        }
+      },
+      {
+        "id": "D03",
+        "fichero": "factura_horno_octubre2025.pdf",
+        "tipo": "factura o justificante de gasto",
+        "incidencias": [
+          "Fecha fuera del periodo subvencionable (más de 2 meses antes del alta en el IAE)"
+        ],
+        "gasto_subvencionable": "no",
+        "analisis": {
+          "tipo_documento_id": "DOC-08",
+          "tipo_documento_nombre": "Copia de las facturas y justificantes de pago",
+          "confianza": 0.93,
+          "legible": true,
+          "resumen": "Factura de un proveedor de equipamiento hostelero por la compra de un horno de convección profesional emitida a nombre de la empresa solicitante.",
+          "datos": [
+            {
+              "campo": "Número de factura",
+              "valor": "H-7781"
+            },
+            {
+              "campo": "Fecha de emisión",
+              "valor": "10/10/2025"
+            },
+            {
+              "campo": "Proveedor",
+              "valor": "Equipamientos Hosteleros Inventados S.L. (CIF B00000004)"
+            },
+            {
+              "campo": "Cliente",
+              "valor": "Muestra Ejemplo Cocina S.L. (CIF B00000000)"
+            },
+            {
+              "campo": "Concepto",
+              "valor": "Horno de convección profesional"
+            },
+            {
+              "campo": "Base imponible",
+              "valor": "2.900,00 €"
+            },
+            {
+              "campo": "IVA 21%",
+              "valor": "609,00 €"
+            },
+            {
+              "campo": "Total",
+              "valor": "3.509,00 €"
+            },
+            {
+              "campo": "Forma de pago indicada",
+              "valor": "Transferencia bancaria"
+            },
+            {
+              "campo": "Estado",
+              "valor": "PAGADA el 10/10/2025 (según la propia factura)"
+            },
+            {
+              "campo": "Fecha de alta en IAE declarada",
+              "valor": "01/03/2026"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Factura a nombre de la empresa beneficiaria con su NIF/CIF",
+              "resultado": "correcto",
+              "detalle": "Figura como cliente Muestra Ejemplo Cocina S.L. con CIF B00000000, coincidente con la solicitud.",
+              "referencia": "DOC-08 / ARTÍCULO 8"
+            },
+            {
+              "comprobacion": "Fecha de factura dentro del periodo subvencionable",
+              "resultado": "incidencia",
+              "detalle": "Con alta en IAE el 01/03/2026, el periodo subvencionable general comienza el 01/01/2026 (2 meses antes). La factura es de 10/10/2025, casi 5 meses antes del alta. La ampliación a 4 meses solo se admite para reformas de local comercial a pie de calle, y este gasto es equipamiento, no obra. El gasto quedaría fuera de plazo.",
+              "referencia": "REQ-24 / ARTÍCULO 6 (pág. 9)"
+            },
+            {
+              "comprobacion": "Justificante de pago que detalle beneficiario, concepto, importe y fecha",
+              "resultado": "incidencia",
+              "detalle": "Solo consta la mención 'PAGADA el 10/10/2025' en la propia factura; no se aporta justificante bancario independiente (comprobante de transferencia) que acredite el pago.",
+              "referencia": "REQ-23 / ARTÍCULO 6 (pág. 11)"
+            },
+            {
+              "comprobacion": "Medio de pago admitido (tarjeta, transferencia o domiciliación)",
+              "resultado": "no_verificable",
+              "detalle": "La factura indica transferencia bancaria, pero al no aportarse el comprobante bancario no puede verificarse el medio ni el pago efectivo.",
+              "referencia": "REQ-23"
+            },
+            {
+              "comprobacion": "Importe declarado sin IVA (el IVA no es subvencionable)",
+              "resultado": "correcto",
+              "detalle": "La factura desglosa base imponible 2.900,00 € e IVA 609,00 €; el importe computable sería la base imponible.",
+              "referencia": "ARTÍCULO 6 - excluidos"
+            },
+            {
+              "comprobacion": "Factura de importe igual o superior a 100 € sin impuestos",
+              "resultado": "correcto",
+              "detalle": "Base imponible de 2.900,00 €, superior al mínimo de 100 €.",
+              "referencia": "ARTÍCULO 6 - excluidos"
+            },
+            {
+              "comprobacion": "Concepto incluido entre los gastos subvencionables",
+              "resultado": "correcto",
+              "detalle": "La compra de equipamiento profesional encaja en 'inversiones ligadas a la actividad económica', sin perjuicio del problema de fecha.",
+              "referencia": "ARTÍCULO 6 - subvencionables"
+            },
+            {
+              "comprobacion": "El coste no supera el valor de mercado",
+              "resultado": "no_verificable",
+              "detalle": "No se dispone de elementos comparativos; requiere valoración técnica.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Coincidencia con los conceptos declarados en el Anexo 3 (memoria financiera)",
+              "resultado": "no_verificable",
+              "detalle": "No se ha analizado en este documento el Anexo 3; debe cotejarse el concepto y el importe.",
+              "referencia": "DOC-03"
+            }
+          ],
+          "gastos": [
+            {
+              "concepto": "Horno de convección profesional (factura H-7781)",
+              "fecha": "2025-10-10",
+              "base_imponible": 2900,
+              "forma_pago": "Transferencia bancaria (sin justificante aportado)",
+              "subvencionable": "no",
+              "motivo": "Fecha de factura (10/10/2025) anterior al inicio del periodo subvencionable (01/01/2026, 2 meses antes del alta en IAE de 01/03/2026). No aplica la ampliación a 4 meses por tratarse de equipamiento y no de obra de local a pie de calle. Además, falta justificante de pago con todos los datos de la operación."
+            }
+          ],
+          "mensaje_solicitante_es": "Hemos revisado la factura H-7781 (horno de convección profesional, 2.900 € de base imponible). Detectamos dos cuestiones: 1) La fecha de la factura es 10/10/2025 y, al ser el alta en IAE del 01/03/2026, los gastos solo se admiten desde el 01/01/2026 (dos meses antes del alta); la ampliación hasta 4 meses antes solo se aplica a obras de reforma de local comercial a pie de calle, por lo que este gasto quedaría fuera del periodo subvencionable. 2) No se aporta el justificante de pago: la indicación 'PAGADA' en la factura no es suficiente; debe presentarse el comprobante bancario de la transferencia con beneficiario, concepto, importe y fecha (no se admiten listados de movimientos). Le recomendamos sustituir este gasto por otro dentro del periodo subvencionable y aportar sus justificantes de pago en el plazo de subsanación de 10 días hábiles, por el mismo canal telemático de la solicitud.",
+          "mensaje_solicitante_eu": "H-7781 faktura (konbekzio-labe profesionala, 2.900 € zerga-oinarria) berrikusi dugu. Bi kontu antzeman ditugu: 1) Fakturaren data 2025/10/10 da eta, JEZ-eko alta 2026/03/01ekoa denez, gastuak 2026/01/01etik aurrera baino ez dira onartzen (altaren aurreko bi hilabete); 4 hilabetera arteko luzapena kale-oineko merkataritza-lokalen berritze-obretarako soilik da, beraz gastu hau diruz lagun daitekeen eperik kanpo geratuko litzateke. 2) Ez da ordainketa-egiaztagiria aurkeztu: fakturan 'ORDAINDUTA' jartzea ez da nahikoa; transferentziaren banku-egiaztagiria aurkeztu behar da, onuraduna, kontzeptua, zenbatekoa eta data zehaztuta (ez dira banku-mugimenduen zerrendak onartzen). Gomendatzen dizugu gastu hau epe barruko beste batekin ordezkatzea eta ordainketa-egiaztagiriak 10 egun balioduneko zuzenketa-epean aurkeztea, eskaeraren bide telematiko beretik."
+        },
+        "latencia_ms": 44094,
+        "coste_usd": 0.08992,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [
+            {
+              "incidencia": "Fecha fuera del periodo subvencionable (más de 2 meses antes del alta en el IAE)",
+              "detectada": true
+            }
+          ],
+          "avisos_adicionales": [
+            {
+              "aviso": "Falta justificante de pago independiente",
+              "valoracion": "razonable"
+            }
+          ],
+          "gasto_correcto": true,
+          "comentario": "Análisis correcto: identifica el tipo documental, detecta la incidencia de fecha fuera de plazo con razonamiento adecuado sobre la no aplicación de la ampliación a 4 meses, y marca el gasto como no subvencionable. El aviso sobre la falta de justificante de pago separado es pertinente."
+        }
+      },
+      {
+        "id": "D04",
+        "fichero": "factura_licencia_apertura.pdf",
+        "tipo": "factura o justificante de gasto",
+        "incidencias": [],
+        "gasto_subvencionable": "si",
+        "analisis": {
+          "tipo_documento_id": "DOC-08",
+          "tipo_documento_nombre": "Copia de las facturas y justificantes de pago",
+          "confianza": 0.9,
+          "legible": true,
+          "resumen": "Factura de una gestoría por la tramitación de la licencia de apertura y actividad del local, emitida a nombre de la empresa solicitante, con base imponible de 620 € y marcada como pagada por transferencia.",
+          "datos": [
+            {
+              "campo": "Emisor",
+              "valor": "Gestoría Ejemplo Urgull S.L. (CIF B00000003)"
+            },
+            {
+              "campo": "Nº factura",
+              "valor": "T-2026-031"
+            },
+            {
+              "campo": "Fecha de emisión",
+              "valor": "05/03/2026"
+            },
+            {
+              "campo": "Cliente",
+              "valor": "Muestra Ejemplo Cocina S.L. (CIF B00000000)"
+            },
+            {
+              "campo": "Concepto",
+              "valor": "Tramitación de licencia de apertura y actividad del local"
+            },
+            {
+              "campo": "Base imponible",
+              "valor": "620,00 €"
+            },
+            {
+              "campo": "IVA 21%",
+              "valor": "130,20 €"
+            },
+            {
+              "campo": "Total",
+              "valor": "750,20 €"
+            },
+            {
+              "campo": "Forma de pago",
+              "valor": "Transferencia bancaria"
+            },
+            {
+              "campo": "Estado",
+              "valor": "Pagada el 05/03/2026"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Factura a nombre de la empresa beneficiaria con su NIF/CIF",
+              "resultado": "correcto",
+              "detalle": "Figura como cliente Muestra Ejemplo Cocina S.L. con CIF B00000000, coincidente con la solicitante.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Factura abonada en su totalidad",
+              "resultado": "no_verificable",
+              "detalle": "La factura indica 'PAGADA el 05/03/2026', pero en este documento no se incluye el justificante bancario de pago; se menciona que se adjunta, pero no consta aquí.",
+              "referencia": "ARTÍCULO 6, reglas de justificantes (pág. 11)"
+            },
+            {
+              "comprobacion": "Medio de pago admitido (tarjeta, transferencia o domiciliación)",
+              "resultado": "correcto",
+              "detalle": "Se indica transferencia bancaria, medio admitido. Pendiente de confirmar con el justificante.",
+              "referencia": "REQ-23"
+            },
+            {
+              "comprobacion": "Justificante de pago con detalle de la operación (beneficiario, concepto, importe y fecha)",
+              "resultado": "no_verificable",
+              "detalle": "No se aporta en este archivo el justificante de pago detallado.",
+              "referencia": "REQ-23"
+            },
+            {
+              "comprobacion": "Fecha dentro del periodo subvencionable (desde 2 meses antes del alta en IAE 01/03/2026 hasta 12 meses después)",
+              "resultado": "correcto",
+              "detalle": "Factura de 05/03/2026, dentro del periodo 01/01/2026 – 01/03/2027.",
+              "referencia": "REQ-24"
+            },
+            {
+              "comprobacion": "Importe igual o superior a 100 € sin impuestos",
+              "resultado": "correcto",
+              "detalle": "Base imponible de 620,00 €, superior al mínimo de 100 €.",
+              "referencia": "ARTÍCULO 6, gastos excluidos"
+            },
+            {
+              "comprobacion": "Concepto subvencionable",
+              "resultado": "correcto",
+              "detalle": "Licencias de apertura y actividad y tasas obligatorias de puesta en marcha son gastos subvencionables. No se trata de asesoría fiscal/laboral/contable ordinaria, aunque el emisor sea una gestoría.",
+              "referencia": "ARTÍCULO 6, conceptos subvencionables"
+            },
+            {
+              "comprobacion": "Se computa por base imponible, sin IVA",
+              "resultado": "correcto",
+              "detalle": "La factura desglosa base imponible (620,00 €) e IVA (130,20 €); el importe subvencionable sería 620,00 €.",
+              "referencia": "ARTÍCULO 6, IVA no subvencionable"
+            },
+            {
+              "comprobacion": "Coste no superior al valor de mercado",
+              "resultado": "no_verificable",
+              "detalle": "No hay elementos para contrastar el precio de mercado del servicio.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Coincidencia con los conceptos declarados en el Anexo 3 (memoria financiera)",
+              "resultado": "no_verificable",
+              "detalle": "No se dispone del anexo de memoria financiera para cotejar el concepto y el importe.",
+              "referencia": "DOC-03"
+            }
+          ],
+          "gastos": [
+            {
+              "concepto": "Tramitación de licencia de apertura y actividad del local",
+              "fecha": "2026-03-05",
+              "base_imponible": 620,
+              "forma_pago": "Transferencia bancaria",
+              "subvencionable": "si",
+              "motivo": "Gasto de constitución/puesta en marcha (licencia de apertura y actividad), dentro del periodo subvencionable, importe superior a 100 € sin impuestos y pago por medio admitido. Queda condicionado a la aportación del justificante bancario de pago."
+            }
+          ],
+          "mensaje_solicitante_es": "Hemos recibido la factura T-2026-031 de 05/03/2026 (620,00 € sin IVA) por la tramitación de la licencia de apertura y actividad. El gasto encaja como subvencionable, pero no se ha localizado el justificante bancario del pago. Le pedimos que aporte el justificante de la transferencia con todos los datos de la operación (ordenante/beneficiario, concepto, importe y fecha); no se admiten listados de movimientos bancarios. Recuerde que solo se computa la base imponible (620,00 €), sin IVA.",
+          "mensaje_solicitante_eu": "T-2026-031 faktura jaso dugu, 2026/03/05ekoa (620,00 € BEZik gabe), lokalaren irekiera- eta jarduera-lizentzia izapidetzeagatik. Gastua diruz lagungarria da, baina ez dugu aurkitu ordainketaren banku-egiaztagiria. Mesedez, aurkeztu transferentziaren egiaztagiria eragiketaren datu guztiekin (ordaintzailea/hartzailea, kontzeptua, zenbatekoa eta data); ez dira onartzen banku-mugimenduen zerrendak. Gogoratu zerga-oinarria bakarrik hartzen dela kontuan (620,00 €), BEZik gabe."
+        },
+        "latencia_ms": 31802,
+        "coste_usd": 0.07374,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [],
+          "avisos_adicionales": [
+            {
+              "aviso": "Condiciona el gasto a la aportación del justificante bancario de pago",
+              "valoracion": "razonable"
+            }
+          ],
+          "gasto_correcto": true,
+          "comentario": "El análisis identifica correctamente el tipo de documento, no inventa incidencias y califica el gasto como subvencionable, coincidiendo con la referencia. El recordatorio sobre el justificante de pago es prudente y no altera la calificación."
+        }
+      },
+      {
+        "id": "D05",
+        "fichero": "justificante_transferencia.pdf",
+        "tipo": "justificante de pago",
+        "incidencias": [],
+        "gasto_subvencionable": null,
+        "analisis": {
+          "tipo_documento_id": "DOC-08",
+          "tipo_documento_nombre": "Copia de las facturas y justificantes de pago (justificante de pago por transferencia)",
+          "confianza": 0.9,
+          "legible": true,
+          "resumen": "Justificante bancario de transferencia ejecutada por la empresa solicitante a una gestoría, en pago de la factura T-2026-031 por licencia de apertura.",
+          "datos": [
+            {
+              "campo": "tipo_justificante",
+              "valor": "Justificante de transferencia bancaria"
+            },
+            {
+              "campo": "fecha_operacion",
+              "valor": "06/03/2026"
+            },
+            {
+              "campo": "ordenante",
+              "valor": "MUESTRA EJEMPLO COCINA S.L."
+            },
+            {
+              "campo": "beneficiario",
+              "valor": "GESTORÍA EJEMPLO URGULL S.L."
+            },
+            {
+              "campo": "concepto",
+              "valor": "Pago factura T-2026-031 licencia de apertura"
+            },
+            {
+              "campo": "importe",
+              "valor": "750,20 EUR"
+            },
+            {
+              "campo": "estado",
+              "valor": "Ejecutada"
+            },
+            {
+              "campo": "fecha_alta_iae_declarada",
+              "valor": "2026-03-01"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "El pago se realiza por medio admitido (tarjeta, transferencia o domiciliación)",
+              "resultado": "correcto",
+              "detalle": "Se trata de una transferencia bancaria ejecutada; no es pago en metálico ni Bizum.",
+              "referencia": "Artículo 6, reglas de justificantes (pág. 11) / DOC-08"
+            },
+            {
+              "comprobacion": "El justificante detalla la operación (beneficiario, concepto, importe y fecha) y no es un listado de movimientos",
+              "resultado": "correcto",
+              "detalle": "Constan ordenante, beneficiario, concepto con referencia a la factura T-2026-031, importe 750,20 € y fecha 06/03/2026.",
+              "referencia": "REQ-23"
+            },
+            {
+              "comprobacion": "El pago se realiza desde una cuenta a nombre de la empresa beneficiaria",
+              "resultado": "correcto",
+              "detalle": "El ordenante es MUESTRA EJEMPLO COCINA S.L., coincidente con la solicitante.",
+              "referencia": "DOC-08"
+            },
+            {
+              "comprobacion": "Fecha dentro del periodo subvencionable (desde 2 meses antes del alta en IAE hasta 12 meses después)",
+              "resultado": "correcto",
+              "detalle": "Alta en IAE 01/03/2026; el pago de 06/03/2026 está dentro del periodo (01/01/2026 – 01/03/2027).",
+              "referencia": "REQ-24"
+            },
+            {
+              "comprobacion": "Correspondencia con la factura y pago total de la misma",
+              "resultado": "no_verificable",
+              "detalle": "No se aporta en este documento la factura T-2026-031, por lo que no puede comprobarse que el importe transferido cubra la totalidad de la factura ni su base imponible sin IVA.",
+              "referencia": "DOC-08 / Artículo 6"
+            },
+            {
+              "comprobacion": "Concepto subvencionable y no excluido",
+              "resultado": "no_verificable",
+              "detalle": "El concepto 'licencia de apertura' es subvencionable (tasas obligatorias de puesta en marcha), pero al estar facturado por una gestoría debe verificarse con la factura que no incluye asesoría administrativa ordinaria ni IVA/impuestos indirectos, que no son subvencionables.",
+              "referencia": "Artículo 6, conceptos subvencionables y excluidos (pág. 9)"
+            },
+            {
+              "comprobacion": "Importe mínimo de factura (100 € sin impuestos)",
+              "resultado": "no_verificable",
+              "detalle": "El importe pagado supera los 100 €, pero no se dispone de la base imponible de la factura para confirmarlo sin impuestos.",
+              "referencia": "Artículo 6, gastos excluidos"
+            },
+            {
+              "comprobacion": "Coincidencia con el concepto declarado en el Anexo 3 de memoria financiera",
+              "resultado": "no_verificable",
+              "detalle": "No se dispone del Anexo 3 en este análisis para contrastar el orden y los importes declarados.",
+              "referencia": "DOC-03"
+            }
+          ],
+          "gastos": [
+            {
+              "concepto": "Pago factura T-2026-031 – licencia de apertura (gestoría)",
+              "fecha": "2026-03-06",
+              "base_imponible": null,
+              "forma_pago": "Transferencia bancaria",
+              "subvencionable": "dudoso",
+              "motivo": "El pago está correctamente justificado y dentro de plazo, pero falta la factura para verificar la base imponible sin IVA y que el concepto corresponde a tasas/licencia y no a asesoría administrativa ordinaria (excluida)."
+            }
+          ],
+          "mensaje_solicitante_es": "Hemos recibido el justificante de transferencia de 750,20 € a favor de Gestoría Ejemplo Urgull S.L. (factura T-2026-031, licencia de apertura). El medio de pago y la fecha son correctos. Para poder valorar el gasto, debe aportar también la factura T-2026-031, donde se vea la base imponible sin IVA y el detalle de los conceptos (tasa de licencia y, en su caso, honorarios), ya que el IVA y la asesoría administrativa ordinaria no son subvencionables.",
+          "mensaje_solicitante_eu": "750,20 €-ko transferentziaren egiaztagiria jaso dugu, Gestoría Ejemplo Urgull S.L.-ren alde (T-2026-031 faktura, irekitze-lizentzia). Ordainketa-modua eta data zuzenak dira. Gastua baloratu ahal izateko, T-2026-031 faktura ere aurkeztu behar duzu, BEZik gabeko zerga-oinarria eta kontzeptuen xehetasuna ikusteko (lizentzia-tasa eta, hala badagokio, ordainsariak), BEZa eta ohiko aholkularitza administratiboa ez baitira diruz lagungarriak."
+        },
+        "latencia_ms": 30241,
+        "coste_usd": 0.06947,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [],
+          "avisos_adicionales": [
+            {
+              "aviso": "Gasto marcado como dudoso por falta de la factura asociada para verificar base imponible y concepto",
+              "valoracion": "razonable"
+            }
+          ],
+          "gasto_correcto": null,
+          "comentario": "El tipo documental se identifica correctamente como justificante de pago por transferencia y no se inventan incidencias, coincidiendo con la referencia (sin incidencias). El aviso sobre la ausencia de la factura vinculada para comprobar base imponible y naturaleza del concepto es prudente y útil, no un falso positivo."
+        }
+      },
+      {
+        "id": "D06",
+        "fichero": "contrato_alquiler_local.pdf",
+        "tipo": "contrato de arrendamiento del local",
+        "incidencias": [
+          "Falta la firma de la parte arrendataria"
+        ],
+        "gasto_subvencionable": null,
+        "analisis": {
+          "tipo_documento_id": "DOC-13",
+          "tipo_documento_nombre": "Contrato de arrendamiento o escritura del préstamo hipotecario del local",
+          "confianza": 0.97,
+          "legible": true,
+          "resumen": "Contrato de arrendamiento de un local comercial a pie de calle en el barrio de Altza (San Sebastián) a favor de la empresa solicitante, de fecha 1 de febrero de 2026, firmado solo por la parte arrendadora.",
+          "datos": [
+            {
+              "campo": "fecha_contrato",
+              "valor": "2026-02-01"
+            },
+            {
+              "campo": "arrendataria",
+              "valor": "Muestra Ejemplo Cocina S.L. (CIF B00000000)"
+            },
+            {
+              "campo": "representante_arrendataria",
+              "valor": "Ane Muestra Prueba (NIF 00000002W)"
+            },
+            {
+              "campo": "arrendadora",
+              "valor": "Persona física, NIF 00000001R"
+            },
+            {
+              "campo": "direccion_local",
+              "valor": "Calle Inventada 3, bajo, barrio de Altza, 20017 Donostia / San Sebastián"
+            },
+            {
+              "campo": "tipo_local",
+              "valor": "Local comercial a pie de calle"
+            },
+            {
+              "campo": "destino",
+              "valor": "Cocina para llevar"
+            },
+            {
+              "campo": "duracion",
+              "valor": "5 años desde el 01/02/2026"
+            },
+            {
+              "campo": "renta",
+              "valor": "950 € mensuales más IVA"
+            },
+            {
+              "campo": "forma_pago_renta",
+              "valor": "Domiciliación bancaria"
+            },
+            {
+              "campo": "fianza",
+              "valor": "Dos mensualidades (no subvencionable)"
+            },
+            {
+              "campo": "firmas",
+              "valor": "Firmada solo por la arrendadora; la arrendataria consta 'sin firma'"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Contrato firmado por ambas partes",
+              "resultado": "incidencia",
+              "detalle": "El contrato solo aparece firmado por la parte arrendadora; en el espacio de la arrendataria consta expresamente '(sin firma)'. Debe aportarse el contrato firmado por ambas partes.",
+              "referencia": "DOC-13; ARTÍCULO 8 (pág. 14)"
+            },
+            {
+              "comprobacion": "La arrendataria es la solicitante de la ayuda",
+              "resultado": "correcto",
+              "detalle": "La arrendataria es Muestra Ejemplo Cocina S.L. con CIF B00000000, coincidente con la entidad solicitante.",
+              "referencia": "DOC-13"
+            },
+            {
+              "comprobacion": "Local comercial a pie de calle en San Sebastián",
+              "resultado": "correcto",
+              "detalle": "Se indica expresamente local a pie de calle en Calle Inventada 3, bajo, 20017 Donostia / San Sebastián.",
+              "referencia": "DOC-13"
+            },
+            {
+              "comprobacion": "La propiedad arrendadora no es persona socia ni familiar hasta 2º grado",
+              "resultado": "no_verificable",
+              "detalle": "El contrato identifica a la arrendadora (NIF 00000001R), pero no puede descartarse el parentesco o vinculación societaria sin cotejar con las personas socias declaradas en el Anexo 1.",
+              "referencia": "DOC-13; ARTÍCULO 6 (gastos excluidos)"
+            },
+            {
+              "comprobacion": "Periodo del contrato coherente con los gastos de alquiler presentados",
+              "resultado": "no_verificable",
+              "detalle": "El contrato comienza el 01/02/2026 (dentro del periodo subvencionable: desde 2 meses antes del alta en IAE de 01/03/2026), pero no se aportan aquí las facturas/recibos de alquiler para contrastar.",
+              "referencia": "REQ-24"
+            },
+            {
+              "comprobacion": "Incompatibilidad con el incremento por obras",
+              "resultado": "correcto",
+              "detalle": "En la solicitud se marcan los incrementos de colectivo, alquiler/hipoteca y distrito este; no se solicita el incremento por obras, por lo que no hay incompatibilidad.",
+              "referencia": "REQ-20"
+            },
+            {
+              "comprobacion": "Ubicación en Distrito Este (Altza, Intxaurrondo o Miracruz-Bidebieta)",
+              "resultado": "correcto",
+              "detalle": "El local se sitúa en el barrio de Altza, incluido en el ámbito del incremento por Distrito Este.",
+              "referencia": "DOC-13"
+            },
+            {
+              "comprobacion": "Exclusión de fianzas y depósitos",
+              "resultado": "correcto",
+              "detalle": "El contrato prevé una fianza de dos mensualidades; se advierte de que las fianzas y depósitos no son gastos subvencionables y no deben incluirse en la memoria financiera.",
+              "referencia": "ARTÍCULO 6 (gastos excluidos)"
+            },
+            {
+              "comprobacion": "Forma de pago admitida",
+              "resultado": "correcto",
+              "detalle": "La renta se paga por domiciliación bancaria, forma de pago admitida.",
+              "referencia": "REQ-23"
+            }
+          ],
+          "gastos": [],
+          "mensaje_solicitante_es": "El contrato de alquiler del local aportado solo está firmado por la parte arrendadora: en el espacio de la arrendataria figura «sin firma». Le pedimos que aporte el contrato firmado por ambas partes. Le recordamos además que la fianza (dos mensualidades) no es un gasto subvencionable y no debe incluirse en la memoria financiera, y que los recibos de alquiler deben justificarse con documentos que detallen beneficiario, concepto, importe y fecha, y con el importe sin IVA.",
+          "mensaje_solicitante_eu": "Aurkeztutako lokalaren alokairu-kontratua errentatzailearen aldetik bakarrik dago sinatuta: errentariaren tokian «sinadurarik gabe» ageri da. Mesedez, ekar ezazu bi alderdiek sinatutako kontratua. Gainera, gogorarazten dizugu fidantza (bi hilabetekoak) ez dela gastu diruz lagungarria eta ez dela memoria finantzarioan sartu behar, eta alokairuaren ordainagiriek onuraduna, kontzeptua, zenbatekoa eta data zehaztu behar dituztela, BEZik gabeko zenbatekoarekin."
+        },
+        "latencia_ms": 32563,
+        "coste_usd": 0.07316,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [
+            {
+              "incidencia": "Falta la firma de la parte arrendataria",
+              "detectada": true
+            }
+          ],
+          "avisos_adicionales": [],
+          "gasto_correcto": null,
+          "comentario": "Identifica correctamente el tipo de documento y detecta la única incidencia de referencia (ausencia de firma de la arrendataria), con detalle y referencia adecuados. Sin falsos positivos."
+        }
+      },
+      {
+        "id": "D07",
+        "fichero": "contrato_indefinido_parcial.pdf",
+        "tipo": "contrato de trabajo indefinido",
+        "incidencias": [
+          "Jornada del 40 %, inferior al mínimo del 50 %"
+        ],
+        "gasto_subvencionable": null,
+        "analisis": {
+          "tipo_documento_id": "DOC-10",
+          "tipo_documento_nombre": "Copia del contrato indefinido de las personas contratadas",
+          "confianza": 0.93,
+          "legible": true,
+          "resumen": "Contrato de trabajo indefinido a tiempo parcial (40% de jornada) de una persona ayudante de cocina en la empresa solicitante, con inicio el 15/04/2026 en un centro de trabajo de Altza (Donostia).",
+          "datos": [
+            {
+              "campo": "Empresa contratante",
+              "valor": "MUESTRA EJEMPLO COCINA S.L. · CIF B00000000"
+            },
+            {
+              "campo": "Centro de trabajo",
+              "valor": "Altza, Donostia"
+            },
+            {
+              "campo": "Persona trabajadora",
+              "valor": "J. I. E. · NIF 00000003A"
+            },
+            {
+              "campo": "Tipo de contrato",
+              "valor": "Indefinido a tiempo parcial"
+            },
+            {
+              "campo": "Fecha de inicio",
+              "valor": "15/04/2026"
+            },
+            {
+              "campo": "Jornada",
+              "valor": "16 h/semana (40% de la jornada completa)"
+            },
+            {
+              "campo": "Firmas",
+              "valor": "Firmado por empresa y persona trabajadora (firmas manuscritas)"
+            },
+            {
+              "campo": "Vía de empleo declarada en la solicitud",
+              "valor": "Alta en RETA (no contratación)"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Que el contrato es indefinido y no fijo discontinuo",
+              "resultado": "correcto",
+              "detalle": "El contrato consta como indefinido a tiempo parcial; no se indica modalidad fija discontinua.",
+              "referencia": "REQ-07 / DOC-10"
+            },
+            {
+              "comprobacion": "Que la jornada es de al menos el 50%",
+              "resultado": "incidencia",
+              "detalle": "La jornada es de 16 horas semanales, el 40% de la jornada completa, por debajo del mínimo exigido del 50%. Este contrato no serviría para acreditar el requisito de generación de empleo ni para subvencionar nóminas.",
+              "referencia": "REQ-07 (ARTÍCULO 4, pág. 6)"
+            },
+            {
+              "comprobacion": "Que el alta se produce entre el 1 de enero y el 31 de diciembre de 2026",
+              "resultado": "correcto",
+              "detalle": "Fecha de inicio 15/04/2026, dentro del ejercicio 2026 y posterior al alta en IAE (01/03/2026).",
+              "referencia": "REQ-07"
+            },
+            {
+              "comprobacion": "Que el contrato está firmado por ambas partes y la empresa contratante coincide con la solicitante",
+              "resultado": "correcto",
+              "detalle": "Figuran firmas de ambas partes y la empresa (Muestra Ejemplo Cocina S.L., CIF B00000000) coincide con la solicitante.",
+              "referencia": "DOC-10"
+            },
+            {
+              "comprobacion": "Que la persona contratada no es socia de la empresa",
+              "resultado": "no_verificable",
+              "detalle": "El contrato no acredita la condición de socia o no socia; debe cotejarse con el Anexo 1 y los DNI de las personas socias.",
+              "referencia": "DOC-10 / ARTÍCULO 6 (nóminas)"
+            },
+            {
+              "comprobacion": "Que existe compromiso de mantener la contratación durante el primer año de la empresa",
+              "resultado": "no_verificable",
+              "detalle": "El documento no recoge expresamente el compromiso de mantenimiento durante los 12 primeros meses de la empresa.",
+              "referencia": "DOC-10 / REQ-07"
+            },
+            {
+              "comprobacion": "Coherencia con la vía de empleo declarada en la solicitud",
+              "resultado": "no_verificable",
+              "detalle": "En la solicitud el requisito de empleo se acredita por alta en RETA, por lo que este contrato no es documentación exigible (DOC-10 solo procede si el empleo se acredita por contratación). Al no haberse justificado el alta mediante contrato indefinido, las nóminas de esta persona no serían gasto subvencionable.",
+              "referencia": "ARTÍCULO 6 (conceptos subvencionables: salarios) / DOC-10"
+            }
+          ],
+          "gastos": [],
+          "mensaje_solicitante_es": "Hemos recibido un contrato de trabajo indefinido a tiempo parcial del 40% de la jornada (16 horas semanales). Le informamos de que la convocatoria exige una jornada mínima del 50% para que una contratación sirva para acreditar la creación de empleo o para subvencionar nóminas, por lo que este contrato no puede tenerse en cuenta a esos efectos. En su solicitud el requisito de empleo se acredita mediante el alta en el RETA, por lo que este documento no es obligatorio; si desea que se valore una contratación, deberá aportar un contrato indefinido con jornada de al menos el 50%, firmado por ambas partes y con compromiso de mantenimiento durante el primer año de la empresa.",
+          "mensaje_solicitante_eu": "Lanaldi partzialeko (% 40, astean 16 orduko) lan-kontratu mugagabea jaso dugu. Jakinarazten dizugu deialdiak lanaldiaren % 50eko gutxieneko betekizuna ezartzen duela kontratazio bat enplegu-sorkuntza egiaztatzeko edo nominak diruz laguntzeko; beraz, kontratu hau ezin da horretarako kontuan hartu. Zure eskaeran enplegu-baldintza RETAn alta emanda egiaztatzen da, eta, hortaz, agiri hau ez da beharrezkoa. Kontratazio bat balioztatzea nahi baduzu, gutxienez lanaldiaren % 50eko kontratu mugagabea aurkeztu behar duzu, bi aldeek izenpetuta eta enpresaren lehen urtean mantentzeko konpromisoarekin."
+        },
+        "latencia_ms": 32588,
+        "coste_usd": 0.07274,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [
+            {
+              "incidencia": "Jornada del 40 %, inferior al mínimo del 50 %",
+              "detectada": true
+            }
+          ],
+          "avisos_adicionales": [],
+          "gasto_correcto": null,
+          "comentario": "El análisis identifica correctamente el tipo de documento y detecta la única incidencia de referencia (jornada del 40% inferior al 50% exigido), con detalle y referencia normativa adecuados. No añade falsos positivos."
+        }
+      },
+      {
+        "id": "D08",
+        "fichero": "certificado_titularidad.pdf",
+        "tipo": "certificado bancario / datos bancarios",
+        "incidencias": [],
+        "gasto_subvencionable": null,
+        "analisis": {
+          "tipo_documento_id": "DOC-02",
+          "tipo_documento_nombre": "Anexo 2. Datos bancarios sellados por el banco (o certificado de titularidad)",
+          "confianza": 0.95,
+          "legible": true,
+          "resumen": "Certificado bancario de titularidad de cuenta a nombre de la empresa solicitante, con sello de la entidad y fecha de 18 de marzo de 2026.",
+          "datos": [
+            {
+              "campo": "tipo_de_documento",
+              "valor": "Certificado de titularidad de cuenta emitido por entidad bancaria"
+            },
+            {
+              "campo": "titular",
+              "valor": "MUESTRA EJEMPLO COCINA S.L."
+            },
+            {
+              "campo": "cif_titular",
+              "valor": "B00000000"
+            },
+            {
+              "campo": "iban",
+              "valor": "ES00 0000 0000 0000 0000 0001"
+            },
+            {
+              "campo": "fecha_documento",
+              "valor": "2026-03-18"
+            },
+            {
+              "campo": "entidad",
+              "valor": "Banco Inventado, S.A. - Oficina 0001"
+            },
+            {
+              "campo": "cuenta_abierta_desde",
+              "valor": "2026-01-15"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Que la persona o entidad titular de la cuenta es la misma que solicita la ayuda (coincidencia de nombre y NIF/CIF)",
+              "resultado": "correcto",
+              "detalle": "El titular es MUESTRA EJEMPLO COCINA S.L., coincidente con la entidad solicitante; el CIF indicado debe cotejarse con el del Anexo 1 y el DOC-05, pero no se aprecia discrepancia.",
+              "referencia": "DOC-02, art. 8"
+            },
+            {
+              "comprobacion": "Que figura el IBAN completo y legible",
+              "resultado": "correcto",
+              "detalle": "Consta IBAN completo y legible (24 posiciones).",
+              "referencia": "DOC-02, art. 8"
+            },
+            {
+              "comprobacion": "Que lleva sello o firma de la entidad bancaria, o se aporta certificado de titularidad",
+              "resultado": "correcto",
+              "detalle": "Se aporta certificado de titularidad bancaria con sello de la entidad (Banco Inventado, Oficina 0001), admisible como alternativa al Anexo 2 sellado.",
+              "referencia": "DOC-02, art. 8"
+            },
+            {
+              "comprobacion": "Que el anexo está firmado por la persona representante legal y constan su DNI y cargo",
+              "resultado": "no_verificable",
+              "detalle": "Al tratarse de un certificado bancario sustitutivo del Anexo 2, no incluye firma ni datos de la persona representante legal de la empresa. Si el equipo técnico exige además el Anexo 2 firmado, debería requerirse; según la ficha, el certificado de titularidad es documento equivalente admitido.",
+              "referencia": "DOC-02, art. 8"
+            },
+            {
+              "comprobacion": "Que consta la fecha del documento",
+              "resultado": "correcto",
+              "detalle": "Fecha de expedición: 18 de marzo de 2026, posterior al alta en IAE (01/03/2026) y coherente con la presentación de la solicitud.",
+              "referencia": "DOC-02, art. 8"
+            }
+          ],
+          "gastos": [],
+          "mensaje_solicitante_es": "El certificado bancario de titularidad aportado es válido: figura la empresa solicitante como titular, el IBAN completo, el sello de la entidad y la fecha. No obstante, si no ha presentado el Anexo 2 de datos bancarios firmado por la persona representante legal (con su DNI y cargo), le recomendamos aportarlo para completar el expediente.",
+          "mensaje_solicitante_eu": "Aurkeztutako banku-titulartasunaren ziurtagiria egokia da: enpresa eskatzailea titular gisa ageri da, IBAN osoa, entitatearen zigilua eta data jasotzen ditu. Hala ere, banku-datuen 2. eranskina legezko ordezkariak sinatuta (NAN eta kargua adierazita) aurkeztu ez baduzu, gomendatzen dizugu hura ere eranstea espedientea osatzeko."
+        },
+        "latencia_ms": 20786,
+        "coste_usd": 0.05329,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [],
+          "avisos_adicionales": [],
+          "gasto_correcto": null,
+          "comentario": "El análisis identifica correctamente el documento como certificado/datos bancarios y no reporta incidencias, coincidiendo con la referencia."
+        }
+      },
+      {
+        "id": "D09",
+        "fichero": "vida_laboral.pdf",
+        "tipo": "vida laboral",
+        "incidencias": [],
+        "gasto_subvencionable": null,
+        "analisis": {
+          "tipo_documento_id": "DOC-12",
+          "tipo_documento_nombre": "Vida laboral o alta en mutualidad de la persona promotora (alta nueva)",
+          "confianza": 0.95,
+          "legible": true,
+          "resumen": "Informe de vida laboral de la persona promotora que acredita un alta nueva en RETA el 01/03/2026 vinculada a la actividad de cocina para llevar.",
+          "datos": [
+            {
+              "campo": "titular",
+              "valor": "ANE MUESTRA PRUEBA"
+            },
+            {
+              "campo": "nif_titular",
+              "valor": "00000002W"
+            },
+            {
+              "campo": "fecha_informe",
+              "valor": "25/03/2026"
+            },
+            {
+              "campo": "regimen_alta_nueva",
+              "valor": "RETA (Autónomos)"
+            },
+            {
+              "campo": "fecha_alta_reta",
+              "valor": "01/03/2026"
+            },
+            {
+              "campo": "situacion_actual",
+              "valor": "En alta, sin fecha de baja"
+            },
+            {
+              "campo": "actividad_declarada_en_alta",
+              "valor": "Cocina para llevar"
+            },
+            {
+              "campo": "antecedentes",
+              "valor": "Régimen General en Hostelería Imaginaria S.L. 01/06/2021-31/12/2025; prestación por desempleo 01/01/2026-28/02/2026"
+            },
+            {
+              "campo": "fecha_alta_iae_solicitud",
+              "valor": "2026-03-01"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "El alta se ha producido entre el 1 de enero y el 31 de diciembre de 2026",
+              "resultado": "correcto",
+              "detalle": "El alta en RETA consta con fecha 01/03/2026, dentro del ejercicio 2026.",
+              "referencia": "REQ-07 / ARTÍCULO 4 (pág. 6)"
+            },
+            {
+              "comprobacion": "El régimen es RETA, mutualidad profesional o Régimen General",
+              "resultado": "correcto",
+              "detalle": "Alta en Régimen Especial de Trabajadores Autónomos (RETA), coherente con la vía de empleo declarada en la solicitud (alta_reta).",
+              "referencia": "REQ-07"
+            },
+            {
+              "comprobacion": "El documento es reciente y corresponde a la persona promotora indicada en la solicitud",
+              "resultado": "no_verificable",
+              "detalle": "El informe es reciente (25/03/2026). No es posible contrastar el nombre y NIF de la titular con los declarados en el Anexo 1 y el DNI, ya que no se dispone de esos documentos en esta revisión.",
+              "referencia": "DOC-12"
+            },
+            {
+              "comprobacion": "El alta está vinculada a la actividad económica por la que se pide la ayuda",
+              "resultado": "correcto",
+              "detalle": "El alta figura como 'RETA · Cocina para llevar', coherente con la actividad de la solicitante Muestra Ejemplo Cocina S.L.",
+              "referencia": "DOC-12"
+            },
+            {
+              "comprobacion": "La fecha de alta es coherente con la fecha de alta en el IAE declarada",
+              "resultado": "correcto",
+              "detalle": "Alta en RETA 01/03/2026 coincide con la fecha de alta en IAE declarada (01/03/2026).",
+              "referencia": "REQ-03"
+            },
+            {
+              "comprobacion": "Actividad nueva: no haber ejercido la misma o similar actividad como titular en los seis meses anteriores",
+              "resultado": "no_verificable",
+              "detalle": "La vida laboral muestra empleo por cuenta ajena en Hostelería Imaginaria S.L. hasta 31/12/2025 (actividad afín), pero por cuenta ajena no implica titularidad. Debe confirmarse con el histórico de IAE de la persona promotora.",
+              "referencia": "REQ-04 / REQ-05 (págs. 5-6)"
+            },
+            {
+              "comprobacion": "Mantenimiento del alta durante el primer año de la empresa",
+              "resultado": "no_verificable",
+              "detalle": "El alta consta vigente sin fecha de baja, pero el mantenimiento durante 12 meses se acreditará en la fase de justificación (DOC-19).",
+              "referencia": "DOC-19 / ARTÍCULO 11 (pág. 17)"
+            }
+          ],
+          "gastos": [],
+          "mensaje_solicitante_es": "Hemos recibido el informe de vida laboral. Acredita correctamente el alta en RETA el 01/03/2026, coincidente con el alta en IAE. No es necesario que aporte nada más por este documento; recuerde que al justificar la ayuda deberá presentar una vida laboral emitida después de cumplirse 12 meses desde el alta, que acredite el mantenimiento ininterrumpido.",
+          "mensaje_solicitante_eu": "Lan-bizitzaren txostena jaso dugu. Behar bezala egiaztatzen du RETAn 2026/03/01ean emandako alta, EJZko altarekin bat datorrena. Dokumentu honengatik ez duzu beste ezer aurkeztu behar; gogoratu laguntza justifikatzean altatik 12 hilabete igaro ondoren emandako lan-bizitza aurkeztu beharko duzula, etenik gabeko mantentzea egiaztatzeko."
+        },
+        "latencia_ms": 28017,
+        "coste_usd": 0.06927,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [],
+          "avisos_adicionales": [],
+          "gasto_correcto": null,
+          "comentario": "El análisis identifica correctamente el documento como vida laboral/alta de la persona promotora y no reporta incidencias, coincidiendo con la referencia."
+        }
+      },
+      {
+        "id": "D10",
+        "fichero": "carta_menu.pdf",
+        "tipo": "otro (no es un documento exigido)",
+        "incidencias": [],
+        "gasto_subvencionable": null,
+        "analisis": {
+          "tipo_documento_id": "otro",
+          "tipo_documento_nombre": "Documento no correspondiente a la convocatoria (carta/menú comercial)",
+          "confianza": 0.95,
+          "legible": true,
+          "resumen": "Carta de precios de un servicio de cocina para llevar, sin relación con la documentación exigida en la convocatoria.",
+          "datos": [
+            {
+              "campo": "tipo_contenido",
+              "valor": "Listado de platos y precios (carta de otoño)"
+            },
+            {
+              "campo": "elementos",
+              "valor": "Txangurro al horno 14,50 €; Bacalao al pil-pil 16,00 €; Pantxineta 5,50 €"
+            },
+            {
+              "campo": "identificacion_empresa",
+              "valor": "No consta razón social ni NIF/CIF"
+            },
+            {
+              "campo": "fecha",
+              "valor": "No consta"
+            },
+            {
+              "campo": "firma_o_sello",
+              "valor": "No consta"
+            }
+          ],
+          "comprobaciones": [
+            {
+              "comprobacion": "Correspondencia con alguno de los tipos documentales exigidos (DOC-01 a DOC-20)",
+              "resultado": "incidencia",
+              "detalle": "El archivo es una carta comercial de precios; no se corresponde con ningún anexo, factura, justificante de pago, contrato, DNI, CIF ni certificado requerido en el artículo 8.",
+              "referencia": "ARTÍCULO 8. SOLICITUDES Y DOCUMENTACIÓN A PRESENTAR (pág. 13)"
+            },
+            {
+              "comprobacion": "Validez como factura o justificante de gasto",
+              "resultado": "incidencia",
+              "detalle": "No reúne los requisitos de factura (emisor, NIF, número, fecha, destinatario, base imponible e IVA) ni de justificante de pago con detalle de la operación.",
+              "referencia": "ARTÍCULO 6. CONCEPTOS A SUBVENCIONAR / REQ-23"
+            },
+            {
+              "comprobacion": "Identificación de la entidad solicitante (razón social y NIF/CIF)",
+              "resultado": "no_verificable",
+              "detalle": "El documento no incluye datos identificativos que permitan vincularlo a Muestra Ejemplo Cocina S.L.",
+              "referencia": null
+            },
+            {
+              "comprobacion": "Aportación de documentación exigida para los incrementos solicitados (colectivo, alquiler/hipoteca, distrito este)",
+              "resultado": "no_verificable",
+              "detalle": "Este documento no acredita ninguno de los incrementos marcados; deberá aportarse DNI de las personas socias y contrato de arrendamiento o escritura hipotecaria del local a pie de calle.",
+              "referencia": "DOC-11 y DOC-13, ARTÍCULO 8 (pág. 14)"
+            }
+          ],
+          "gastos": [],
+          "mensaje_solicitante_es": "El archivo aportado («documento_10.pdf») es una carta de platos y precios, y no se corresponde con ninguno de los documentos exigidos en la convocatoria. Le rogamos que sustituya este archivo por el documento correcto (anexos, facturas y justificantes de pago, DNI, CIF, contrato de alquiler, etc.). Recuerde que la subsanación debe presentarse por vía telemática, por el mismo canal que la solicitud, en un plazo máximo de 10 días hábiles desde la notificación; no se admiten envíos por correo electrónico.",
+          "mensaje_solicitante_eu": "Aurkeztutako fitxategia («documento_10.pdf») plater eta prezioen karta bat da, eta ez dator bat deialdian eskatzen den inolako agirirekin. Mesedez, ordeztu fitxategi hori dagokion agiriaz (eranskinak, fakturak eta ordainagiriak, NANa, IFK, alokairu-kontratua, etab.). Gogoratu zuzenketa telematikoki aurkeztu behar dela, eskaera egiteko bide beretik, jakinarazpenetik gehienez 10 egun balioduneko epean; ez da onartzen posta elektroniko bidez bidaltzea."
+        },
+        "latencia_ms": 24020,
+        "coste_usd": 0.0521,
+        "juicio": {
+          "tipo_correcto": true,
+          "incidencias_detectadas": [],
+          "avisos_adicionales": [
+            {
+              "aviso": "No se corresponde con ningún tipo documental exigido en el artículo 8",
+              "valoracion": "razonable"
+            },
+            {
+              "aviso": "No reúne los requisitos de factura ni de justificante de pago",
+              "valoracion": "razonable"
+            }
+          ],
+          "gasto_correcto": null,
+          "comentario": "El análisis identifica correctamente que el archivo es un documento ajeno a la convocatoria (carta comercial de precios), coincidiendo con la referencia. No existían incidencias de referencia y los dos avisos emitidos son consecuencia lógica de esa clasificación, por lo que resultan razonables y no constituyen falsos positivos. No se declaran gastos, lo que es coherente."
+        }
+      }
+    ],
+    "resumen": {
+      "casos": 10,
+      "tipo_correcto_pct": 100,
+      "incidencias_detectadas_pct": 100,
+      "incidencias_referencia": 5,
+      "avisos_adicionales": 8,
+      "falsos_positivos": 0,
+      "documentos_correctos_sin_falsos_positivos_pct": 100,
+      "gasto_correcto_pct": 100,
+      "latencia_media_s": 31.4,
+      "coste_medio_usd": 0.0703
+    }
+  },
+  "coste_juez_usd": 0.124,
+  "errores": []
+}

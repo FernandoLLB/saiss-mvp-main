@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* Paleta con contraste ≥ 4.5:1 (WCAG 2.2 AA) sobre fondo y superficie */
+@theme {
+  --color-tinta: #10243e;
+  --color-tenue: #4a5868;
+  --color-fondo: #f5f6f2;
+  --color-superficie: #ffffff;
+  --color-borde: #d8dcd4;
+  --color-primario: #0b5c63;
+  --color-primario-oscuro: #07464c;
+  --color-primario-suave: #e2efed;
+  --color-acento: #b4400b;
+  --color-acento-suave: #fbeee6;
+  --color-ok: #1b6b39;
+  --color-ok-suave: #e5f2e9;
+  --color-aviso: #845400;
+  --color-aviso-suave: #fbf1dc;
+  --color-error: #a3262b;
+  --color-error-suave: #fbe9e9;
+  --font-sans: var(--font-atkinson), system-ui, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.prosa p + p {
+  margin-top: 0.6em;
+}
+.prosa ul,
+.prosa ol {
+  margin: 0.4em 0 0.4em 1.25em;
+}
+.prosa ul {
+  list-style: disc;
+}
+.prosa ol {
+  list-style: decimal;
+}
+.prosa strong {
+  font-weight: 700;
+}
+
+/* Tablas del panel: espaciado y alineación uniformes */
+.tabla-scroll {
+  overflow-x: auto;
+}
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.tabla th {
+  padding: 0.5rem 0.875rem 0.625rem;
+  text-align: left;
+  vertical-align: bottom;
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--color-tenue);
+}
+.tabla td {
+  padding: 0.75rem 0.875rem;
+  vertical-align: middle;
+  border-top: 1px solid var(--color-borde);
+}
+.tabla.arriba td {
+  vertical-align: top;
+}
+.tabla th:first-child,
+.tabla td:first-child {
+  padding-left: 0.25rem;
+}
+.tabla th:last-child,
+.tabla td:last-child {
+  padding-right: 0.25rem;
+}
+.tabla .num {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.tabla .fijo {
+  white-space: nowrap;
+}
+.tabla tbody tr:hover {
+  background: color-mix(in srgb, var(--color-primario-suave) 45%, transparent);
+}

@@ -1,0 +1,4 @@
+.pnpm-store
+data/uploads
+.next
+node_modules
